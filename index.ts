@@ -7,9 +7,9 @@ interface ISelectors {
 }
 
 class ValidationFormFields {
-  private form: HTMLFormElement;
-  private password: HTMLInputElement;
-  private confirmPassword: HTMLInputElement;
+  private readonly form: HTMLFormElement;
+  private readonly password: HTMLInputElement;
+  private readonly confirmPassword: HTMLInputElement;
 
   constructor(selectors: ISelectors) {
     this.form = document.querySelector(selectors.form) as HTMLFormElement;
