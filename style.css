@@ -99,6 +99,6 @@ body {
   display: block;
 }
 
-.form .show-error-message input[type] {
-  border-color: var(--error-color);
+.form input[type].field-error {
+  border: 1px solid var(--error-color);
 }
